@@ -24,10 +24,14 @@ public class Main {
                 System.out.println("result : "+(n1*n2));
                 break;
             case 4:
-                System.out.println("result : "+(n1/n2));
+                if(n2==0){
+                    System.out.println("! Math Error");
+                }else{
+                    System.out.println("result : "+(n1/n2));
+                }
                 break;
             default :
-                System.out.println("! invalid choice");
+                System.out.println("! Invalid Choice");
                 break;
         }
     }
